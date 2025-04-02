@@ -1,0 +1,6 @@
+@cdv_people_HostAddress = http://localhost:5229
+
+GET {{cdv_people_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
