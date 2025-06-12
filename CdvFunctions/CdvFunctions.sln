@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cdv.Domain", "Cdv.Domain\Cdv.Domain.csproj", "{4439591C-62FE-4012-9FE0-4B2D8B28DA91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cdv.Functions", "Cdv.Functions\Cdv.Functions.csproj", "{6814B522-2084-485A-A73E-DF020C32977F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4439591C-62FE-4012-9FE0-4B2D8B28DA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4439591C-62FE-4012-9FE0-4B2D8B28DA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4439591C-62FE-4012-9FE0-4B2D8B28DA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4439591C-62FE-4012-9FE0-4B2D8B28DA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6814B522-2084-485A-A73E-DF020C32977F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6814B522-2084-485A-A73E-DF020C32977F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6814B522-2084-485A-A73E-DF020C32977F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6814B522-2084-485A-A73E-DF020C32977F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
