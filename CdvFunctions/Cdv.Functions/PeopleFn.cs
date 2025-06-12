@@ -1,4 +1,6 @@
-﻿using Cdv.Domain.DbContext;
+﻿using System.Text.Json;
+using Cdv.Domain.DbContext;
+using Cdv.Domain.Entities;
 using Cdv.Functions.Dto;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
@@ -19,12 +21,12 @@ public class PeopleFn
     }
 
     [Function("PeopleFn")]
-    public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", "put", "delete")] HttpRequest req)
+    public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", "put", "delete")] HttpRequest req)
     {
         switch (req.Method)
         {
             case "POST":
-                var person = CreatePerson(req);
+                var person = await CreatePerson(req);
                 return new OkObjectResult(person);
             case "GET":
                 var idExist = req.Query.Any(x => x.Key == "Id");
@@ -77,8 +79,33 @@ public class PeopleFn
             LastName = person.LastName
         };
     }
-    private PersonDto CreatePerson(HttpRequest req)
+    private async Task<PersonDto> CreatePerson(HttpRequest req)
     {
-        throw new NotImplementedException();
+        using var streamReader = new StreamReader(req.Body);
+        var requestBody = await streamReader.ReadToEndAsync();
+        
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+
+        var personDto = JsonSerializer.Deserialize<PersonDto>(requestBody, options);
+
+        var person = new PersonEntity
+        {
+            FirstName = personDto.FirstName,
+            LastName = personDto.LastName
+        };
+        
+        db.People.Add(person);
+        await db.SaveChangesAsync();
+        
+        return new PersonDto
+        {
+            Id = person.Id,
+            FirstName = person.FirstName,
+            LastName = person.LastName
+        };
     }
 }
