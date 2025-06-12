@@ -1,26 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karolswiercz/Desktop/cdv-people/cdv-people/cdv-people.csproj": {}
+    "C:\\Users\\swier\\Repos\\cc_L2025_28295\\cdv-people\\cdv-people\\cdv-people.csproj": {}
   },
   "projects": {
-    "/Users/karolswiercz/Desktop/cdv-people/cdv-people/cdv-people.csproj": {
+    "C:\\Users\\swier\\Repos\\cc_L2025_28295\\cdv-people\\cdv-people\\cdv-people.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karolswiercz/Desktop/cdv-people/cdv-people/cdv-people.csproj",
+        "projectUniqueName": "C:\\Users\\swier\\Repos\\cc_L2025_28295\\cdv-people\\cdv-people\\cdv-people.csproj",
         "projectName": "cdv-people",
-        "projectPath": "/Users/karolswiercz/Desktop/cdv-people/cdv-people/cdv-people.csproj",
-        "packagesPath": "/Users/karolswiercz/.nuget/packages/",
-        "outputPath": "/Users/karolswiercz/Desktop/cdv-people/cdv-people/obj/",
+        "projectPath": "C:\\Users\\swier\\Repos\\cc_L2025_28295\\cdv-people\\cdv-people\\cdv-people.csproj",
+        "packagesPath": "C:\\Users\\swier\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\swier\\Repos\\cc_L2025_28295\\cdv-people\\cdv-people\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/karolswiercz/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\swier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/GalaxySI/_packaging/TestPackage/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -38,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -82,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

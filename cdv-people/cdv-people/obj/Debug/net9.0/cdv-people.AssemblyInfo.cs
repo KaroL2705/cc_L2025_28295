@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cdv-people")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aecb92125d9af106fdf0915cf2abd77605c95603")]
 [assembly: System.Reflection.AssemblyProductAttribute("cdv-people")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cdv-people")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
